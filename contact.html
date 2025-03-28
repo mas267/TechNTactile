@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tech N' Tactile Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            padding: 10px; /* Ensure consistent padding on all sides */
+            box-sizing: border-box; /* Include padding in width/height calculations */
+            width: 100%; /* Make fields responsive */
+            margin-bottom: 15px; /* Add spacing between fields */
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column; /* Stack fields vertically */
+            gap: 15px; /* Uniform spacing between fields */
+        }
+
+        .submit-button {
+            align-self: flex-start; /* Align button to the left */
+        }
+    </style>
+    <meta name="description" content="Contact Tech N' Tactile Podcast. Reach out with your questions, feedback, or suggestions.">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo outlined-logo">
+            <img src="pod copy 5.png" alt="Tech N' Tactile Logo featuring a microphone" tabindex="0">
+        </div>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#episodes">Episodes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" aria-labelledby="contact-heading">
+        <section class="contact">
+            <h1 id="contact-heading" tabindex="0">Contact Us</h1>
+            <div class="form-container">
+                <form action="#" method="POST" class="contact-form" role="form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+
+                    <button type="submit" class="submit-button" tabindex="0">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" aria-label="Footer">
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+        <p tabindex="0">&copy; 2025 Tech N' Tactile. All rights reserved.</p>
+        <p tabindex="0" style="text-align: center;">Stay Accessible!</p>
+    </footer>
+</body>
+</html>
