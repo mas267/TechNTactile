@@ -1,0 +1,842 @@
+/* General styles for the entire page */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    text-align: center;
+    cursor: url('cursor.png'), auto;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Apply custom cursor globally */
+* {
+    cursor: url('cursor.png'), auto;
+}
+
+/* Header section styles */
+header {
+    background: #16213e;
+    color: #eaeaea;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header h1, .cta-button, .listen-button, .submit-button {
+    color: #ff6600;
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 120px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+.outlined-logo img {
+    width: 150px; /* Adjust size as needed */
+    border: 2px solid #ff6600; /* Same color as headers/buttons */
+    border-radius: 5px; /* Optional for rounded edges */
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fca311;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0f3460; /* Use only this color */
+    color: #eaeaea;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #fca311;
+    color: #16213e;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #eaeaea;
+    color: #16213e;
+}
+
+/* Button hover effects */
+button, .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: url('cursor-click.png'), pointer !important;
+}
+
+button:hover, .submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Featured episodes section */
+.featured-episodes {
+    padding: 40px 20px;
+    background-color: #1a1a2e;
+}
+
+.featured-episodes h2 {
+    color: #fca311;
+    margin-bottom: 20px;
+}
+
+.episode {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.episode img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.listen-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #fca311;
+    color: #16213e;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.listen-button:hover {
+    background-color: #eaeaea;
+}
+
+/* Contact form styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Input fields and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background: #1a1a2e;
+    color: #eaeaea;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #fca311;
+    outline: none;
+}
+
+/* Footer section styles */
+footer {
+    background: #16213e;
+    color: #eaeaea;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #fca311;
+}
+
+/* Consistent container width for all main sections */
+.resource-container,
+.about-container,
+.welcome-container,
+.host-container,
+.accessibility-statement,
+.content-container,
+.footer-container,
+footer {
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    body, main, .resource-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+/* Header and subheader styles */
+h1, h2, h3 {
+    color: #fca311; /* Consistent header color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Enhance header weight */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Blog section styles */
+.blog {
+    padding: 2rem;
+    background-color: #1a1a2e; /* Match the site's background color */
+    color: #eaeaea; /* Match the site's text color */
+}
+
+.blog-post {
+    background-color: #16213e; /* Slightly darker background for the post */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    color: #eaeaea; /* Match the site's text color */
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #fca311; /* Match the site's accent color */
+    margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+    font-size: 1.4rem;
+    color: #fca311; /* Use a secondary accent color */
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #eaeaea; /* Match the site's text color */
+    margin-bottom: 1rem;
+}
+
+.blog-post p:last-child {
+    margin-bottom: 0;
+}
+
+/* Blog card styles */
+.blog-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+    margin: 0 0 8px;
+}
+
+.blog-card p {
+    margin: 0 0 16px;
+}
+
+.read-more-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.pagination button {
+    margin: 0 4px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Global image styles */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Hover effects for buttons */
+.cta-button:hover, .listen-button:hover {
+    background-color: #eaeaea;
+    color: #16213e;
+    transform: scale(1.05); /* Add slight zoom effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Host images styles */
+.hosts-photos img {
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus {
+    outline: 2px solid #fca311; /* Clear focus outline */
+    outline-offset: 4px;
+}
+
+h1:focus, h2:focus, p:focus, img:focus {
+    outline: 2px dashed #fca311;
+    outline-offset: 4px;
+}
+
+/* Resource container styles */
+.resource-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 24px auto;
+    padding: 0 8px;
+    max-width: 800px;
+}
+
+.resource-category {
+    flex: 1 1 calc(50% - 20px); /* Two-column layout */
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.resource-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the list within the container */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align links */
+}
+
+.resource-links li {
+    margin: 10px 0;
+    text-align: center; /* Center each link */
+}
+
+.resource-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fca311 !important; /* Correct orange color */
+    color: black !important; /* Enforce black text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resource-links a:hover {
+    background-color: #eaeaea !important; /* Lighter shade for hover */
+    color: black !important; /* Maintain black text color on hover */
+    transform: scale(1.05);
+}
+
+.resource-links li:focus {
+    outline: 2px dashed #fca311;
+    outline-offset: 4px;
+}
+
+.resource-links:focus {
+    outline: 2px dashed #fca311;
+    outline-offset: 4px;
+}
+
+a:focus {
+    outline: 2px dashed #fca311;
+    outline-offset: 4px;
+}
+
+/* Responsive design for two-column layout */
+@media (max-width: 768px) {
+    .resource-category {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin for smaller screens */
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+}
+
+/* About, welcome, and host container styles */
+.about-container, .welcome-container, .host-container {
+    background-color: #16213e;
+    color: #eaeaea;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-container h1, .welcome-container h2, .host-container h2 {
+    color: #fca311;
+    margin-bottom: 15px;
+}
+
+.about-container p, .welcome-container p, .host-container p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container, .welcome-container, .host-container {
+        padding: 15px;
+    }
+}
+
+/* Accessibility statement styles */
+.accessibility-statement {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Content container styles */
+.content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #16213e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Footer container styles */
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ensure focus styles for accessibility */
+a:focus, button:focus, h1:focus, h2:focus, p:focus {
+    outline: 2px solid #fca311;
+    outline-offset: 4px;
+}
+
+/* Submit button styles */
+.submit-button {
+    background-color: #fca311; /* Correct orange color */
+    color: black !important; /* Enforce black text color */
+    padding: 10px;
+    border: none;
+    cursor: url('cursor-click.png'), pointer !important; /* Ensure custom cursor is applied */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #eaeaea; /* Lighter shade for hover */
+    color: black; /* Maintain black text color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button, a {
+    cursor: url('cursor-click.png'), pointer !important;
+}
+
+/* --- Responsive Navigation Menu for Phone Screens --- */
+/* Mobile-specific navigation styles */
+/* Hamburger Menu Styles */
+/* Hide the menu checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style the menu button (hamburger) */
+.menu-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #16213e;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 10px auto;
+    content: "Navigation"; /* Update button text */
+}
+
+/* Show menu button on small screens */
+@media (max-width: 600px) {
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #16213e;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #menu-toggle:checked + .menu-button + nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Full content styles for blog cards */
+.full-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.full-content.expanded {
+    max-height: 1000px; /* Set a large enough value to accommodate the content */
+}
+
+/* Jump to Latest Blog Post button styles */
+.jump-latest-btn {
+    display: inline-block;
+    margin: 1.5em 0 2em 0;
+    padding: 0.75em 2em;
+    background-color: #fca311 !important; /* Correct orange color */
+    color: #16213e !important;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    cursor: url('cursor-click.png'), pointer !important;
+}
+
+.jump-latest-btn:hover,
+.jump-latest-btn:focus {
+    background-color: #eaeaea;
+    color: #16213e !important;
+    transform: scale(1.05);
+    outline: 2px solid #fca311;
+    outline-offset: 4px;
+}
+
+/* --- Responsive Resource Grid Card Layout --- */
+
+/* Mobile-first: stack cards vertically */
+.resource-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 24px auto;
+    padding: 0 8px;
+    max-width: 1200px;
+}
+
+/* Card style for each resource category */
+.resource-category {
+    background: #22223b;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(252,163,17,0.08);
+    padding: 28px 18px 22px 18px;
+    margin: 0 auto;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 2px solid #fca311;
+    outline: none;
+}
+
+.resource-category:focus-within {
+    box-shadow: 0 0 0 4px #fca311, 0 4px 24px rgba(0,0,0,0.18);
+    border-color: #fff;
+    outline: 2px solid #fca311;
+    outline-offset: 2px;
+}
+
+/* High contrast and clear focus for links */
+.resource-links a {
+    background-color: #fca311 !important;
+    color: #111 !important;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 1.5px 6px rgba(252,163,17,0.10);
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.resource-links a:focus {
+    border: 2px solid #fff;
+    outline: 3px solid #fca311;
+    outline-offset: 2px;
+    background: #fffbe6 !important;
+    color: #111 !important;
+}
+
+.resource-links a:hover {
+    background: #fffbe6 !important;
+    color: #111 !important;
+    box-shadow: 0 2px 8px rgba(252,163,17,0.18);
+}
+
+/* Responsive grid for tablets and up */
+@media (min-width: 600px) {
+    .resource-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 0 16px;
+    }
+}
+
+/* Responsive grid for large screens */
+@media (min-width: 1000px) {
+    .resource-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 36px;
+        padding: 0 32px;
+    }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .resource-category,
+    .resource-links a,
+    .resource-links a:focus,
+    .resource-links a:hover {
+        transition: none !important;
+    }
+}
+
+/* Dark/light mode support */
+@media (prefers-color-scheme: dark) {
+    .resource-category {
+        background: #22223b;
+        border-color: #fca311;
+    }
+    .resource-links a {
+        background: #fca311 !important;
+        color: #111 !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .resource-category {
+        background: #fff;
+        color: #22223b;
+        border-color: #fca311;
+    }
+    .resource-links a {
+        background: #fca311 !important;
+        color: #111 !important;
+    }
+}
+
+/* Ensure keyboard navigation is clear */
+.resource-category:focus-within,
+.resource-links a:focus {
+    z-index: 2;
+    position: relative;
+}
+
+/* --- Old Style Resource List --- */
+.resource-container {
+    display: block;
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 0 8px;
+}
+
+.resource-category {
+    background: #16213e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    padding: 24px 18px 18px 18px;
+    margin-bottom: 28px;
+    border: 2px solid #fca311;
+    text-align: center;
+}
+
+.resource-category h2 {
+    margin-top: 0;
+    color: #fca311;
+}
+
+.resource-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-links li {
+    margin: 14px 0;
+}
+
+.resource-links a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #fca311;
+    color: #16213e !important;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(252,163,17,0.10);
+}
+
+.resource-links a:hover,
+.resource-links a:focus {
+    background: #eaeaea;
+    color: #16213e !important;
+    transform: scale(1.05);
+    outline: 2px solid #fca311;
+    outline-offset: 2px;
+}

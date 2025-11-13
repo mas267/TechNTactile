@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tech N' Tactile Podcast</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact Tech N' Tactile Podcast. Reach out with your questions, feedback, or suggestions.">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo outlined-logo">
+            <a href="index.html" aria-label="Navigate to Home">
+                <img src="pod copy 5.webp" alt="Tech N' Tactile Logo featuring a microphone" tabindex="0">
+            </a>
+        </div>
+        <!-- Add menu toggle checkbox -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Add label for the menu button -->
+        <label for="menu-toggle" class="menu-button" aria-label="Toggle Navigation Menu">Navigation</label>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-label="Navigate to Home">Home</a></li>
+                <li><a href="about.html" aria-label="Learn more About us">About</a></li>
+                <li><a href="episodes.html" aria-label="Browse Episodes">Episodes</a></li>
+                <li><a href="blog.html" aria-label="Read our Blog">Blog</a></li>
+                <li><a href="resources.html" aria-label="Explore Resources">Resources</a></li>
+                <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" aria-labelledby="contact-heading">
+        <section class="contact" aria-labelledby="contact-heading">
+            <h1 id="contact-heading" tabindex="0">Contact Us</h1>
+            <div class="form-container">
+                <form data-basin-form="true" data-basin-spam-protection='recaptcha-v3' action="https://usebasin.com/f/446f09a29f72" method="POST" class="contact-form" role="form" aria-describedby="form-instructions">
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;" aria-hidden="true">
+                    
+                    <p id="form-instructions" tabindex="0">All fields are required. Please fill out the form below to contact us.</p>
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" aria-required="true">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" aria-required="true">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Enter the subject" aria-required="true">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..." aria-required="true"></textarea>
+
+                    <button type="submit" class="submit-button" style="background-color: #fca311;" aria-label="Submit the contact form">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" aria-label="Footer">
+        <ul>
+            <li><a href="privacy.html" aria-label="View Privacy Policy">Privacy Policy</a></li>
+            <li><a href="accessibility.html" aria-label="View Accessibility Statement">Accessibility Statement</a></li>
+            <li><a href="terms.html" aria-label="View Terms of Service">Terms of Service</a></li>
+        </ul>
+        <p tabindex="0">&copy; 2025 Tech N' Tactile. All rights reserved.</p>
+        <p tabindex="0" style="text-align: center;">Stay Accessible!</p>
+    </footer>
+
+    <script src="https://js.usebasin.com/v2.4.0.min.js" async></script>
+</body>
+</html>

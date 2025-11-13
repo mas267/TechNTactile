@@ -1,0 +1,7 @@
+{
+    "event": {
+        "token": "<TOKEN>", // Replace <TOKEN> with the token from grecaptcha.enterprise.execute()
+        "siteKey": "6Lcm1AkrAAAAAI8dywNCA8_L8Ua73BDLt-ylTtX4",
+        "expectedAction": "<USER_ACTION>" // Replace <USER_ACTION> with the user-initiated action
+    }
+}

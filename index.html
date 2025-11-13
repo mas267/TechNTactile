@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech N' Tactile Podcast explores technology, gaming, and accessibility. Listen to our latest episodes and stay updated!">
+    <title>Tech N' Tactile Podcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo outlined-logo">
+            <img src="pod copy 5.webp" alt="Logo of Tech N' Tactile Podcast featuring a microphone icon" width="100%" height="auto">
+        </div>
+        <!-- Add menu toggle checkbox -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Add label for the menu button -->
+        <label for="menu-toggle" class="menu-button" aria-label="Toggle Navigation Menu">Navigation</label>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-label="Navigate to Home">Home</a></li>
+                <li><a href="about.html" aria-label="Learn more About us">About</a></li>
+                <li><a href="episodes.html" aria-label="Browse Episodes">Episodes</a></li>
+                <li><a href="blog.html" aria-label="Read our Blog">Blog</a></li>
+                <li><a href="resources.html" aria-label="Explore Resources">Resources</a></li>
+                <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero">
+            <h1 tabindex="0">Exploring Technology, Gaming, and Accessibility</h1>
+            <a href="https://linktr.ee/TechNTactile" class="cta-button" role="button" tabindex="0">Listen Now</a>
+        </section>
+
+        <section id="episodes" class="featured-episodes" aria-labelledby="featured-episodes-heading">
+            <h2 id="featured-episodes-heading">Featured Episodes</h2>
+            <div id="buzzsprout-small-player"></div>
+            <script src="https://www.buzzsprout.com/2461018/episodes/18182347-you-don-t-need-windows-11-meet-linux-mint-the-gabe-cube.js?container_id=buzzsprout-player-18182347&player=small" type="text/javascript" charset="utf-8"></script>
+        </section>
+    </main>
+    
+    <footer role="contentinfo" aria-label="Footer">
+        <ul>
+            <li><a href="privacy.html" aria-label="View Privacy Policy">Privacy Policy</a></li>
+            <li><a href="accessibility.html" aria-label="View Accessibility Statement">Accessibility Statement</a></li>
+            <li><a href="terms.html" aria-label="View Terms of Service">Terms of Service</a></li>
+        </ul>
+        <p tabindex="0">&copy; 2025 Tech N' Tactile. All rights reserved.</p>
+        <p tabindex="0" style="text-align: center;">Stay Accessible!</p>
+    </footer>
+</body>
+<!-- Code By Michael Stallings | Last Audit Date: 2025-03-30 -->
+</html>

@@ -1,0 +1,1 @@
+// This file can be deleted as FormSubmit.co handles the form submission.
